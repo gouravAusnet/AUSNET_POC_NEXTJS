@@ -1,4 +1,14 @@
 styleguide-sample: This is a dictionary entry in English as a demonstration
-Documentation: Documentation
-Styleguide: Styleguide
-GraphQL: GraphQL
+header:
+  mainMenu:
+    News: News
+    careers: careers
+    Investors: Investors
+    Contact: Contact
+    myHomeEneargy: myHome Eneargy
+  subMenu:
+    Electricity: Electricity
+    Gas: Gas
+    Solar: Solar
+    Safety: Safety
+    Outages: Outages

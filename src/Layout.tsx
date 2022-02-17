@@ -10,7 +10,8 @@ import {
   getPublicUrl,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { StyleguideSitecoreContextValue } from 'lib/component-props';
-
+import Image from 'next/image';
+import ausnetLogo from '../public/AusnetAssets/AusnetLogo.png';
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
 const publicUrl = getPublicUrl();
@@ -21,24 +22,41 @@ const Navigation = () => {
   const { t } = useI18n();
 
   return (
-    <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom">
-      <h5 className="my-0 mr-md-auto font-weight-normal">
+    <div className="align-items-center border-bottom">
+      <div className="row">
+    <div className="col-12">
+    <nav className="my-2 my-md-0 mr-md-3 float-right">
+    <Link href="/">
+          <a className="p-2 text-secondary">{t('Styleguide')}</a>
+        </Link>
+        <Link href="/">
+          <a className="p-2 text-secondary">{t('Styleguide')}</a>
+        </Link>
+        <Link href="/">
+          <a className="p-2 text-secondary">{t('Styleguide')}</a>
+        </Link>
+        <Link href="/">
+          <a className="p-2 text-secondary">{t('Styleguide')}</a>
+        </Link>
+    </nav>
+      </div>
+      </div>
+      <div className="row">
+      <div className="col-6">
+      <h5 className="my-0 mr-md-auto font-weight-normal  ml-2">
         <Link href="/">
           <a className="text-dark">
-            <img src={`${publicUrl}/sc_logo.svg`} alt="Sitecore" />
+            <Image src={ausnetLogo} alt="Ausnet logo"
+              layout="fixed"
+              width={100}
+              height={65} />
           </a>
         </Link>
       </h5>
-      <nav className="my-2 my-md-0 mr-md-3">
-        <a
-          className="p-2 text-dark"
-          href="https://jss.sitecore.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t('Documentation')}
-        </a>
-        <Link href="/styleguide">
+      </div>
+      <div className='col-6'>
+      <nav className="my-2  float-right">
+        <Link href="/">
           <a className="p-2 text-dark">{t('Styleguide')}</a>
         </Link>
         <Link href="/graphql">
@@ -48,6 +66,8 @@ const Navigation = () => {
           <a className="p-2 text-dark">{t('Home')}</a>
         </Link>
       </nav>
+      </div>
+      </div>
     </div>
   );
 };

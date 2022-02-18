@@ -1,8 +1,9 @@
 styleguide-sample: This is a dictionary entry in English as a demonstration
 header:
   mainMenu:
+    About: About
     News: News
-    careers: careers
+    Careers: Careers
     Investors: Investors
     Contact: Contact
     myHomeEneargy: myHome Eneargy

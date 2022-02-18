@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Gilroy Light';
+  src: local('Gilroy Light'), url('/public/AusnetAssets/fonts/Gilroy-Light.otf') format('otf');
+}
+@font-face {
+  font-family: 'Gilroy ExtraBold';
+  src: local('Gilroy ExtraBold'), url('/public/AusnetAssets/fonts/Gilroy-ExtraBold.otf') format('otf');
+}
+
+
 a[target='_blank']:after {
   content: '\1F5D7'
 }
@@ -19,4 +29,25 @@ a[target='_blank']:after {
 }
 a{
   text-decoration: none !important;
+}
+body{
+  font-family: Gilroy Light;
+  font-style: normal;
+}
+
+
+.searchicon{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #4574BF;
+  position: relative;
+  .searchiconImg{
+    line-height: 1;
+    margin-top: 3px !important;
+    margin-left: 1px !important;
+    color: white;
+    width:16px;
+    height: 16px;
+  }
 }

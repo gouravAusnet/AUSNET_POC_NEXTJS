@@ -31,4 +31,8 @@ placeholders:
   jss-home:
     - componentName: Home
       fields:
-          heading: Test Componet
+          heading: Energising futures
+          improveNetwork: Improving your network
+          contentCommunities: <p>We operate the Victorian electricity transmission network, connecting and supplying power to 6.8 million Australians.  You don’t pay your bills to us but if you turned on a light or switched on the TV, we helped make that happen.</p>
+          commonCommunities: <p>We connect customers to electricity, solar and gas. Whether you’re a resident or business, if you have a property that’s not connected to the network, AusNet Services can help.</p>
+          improveNetworkText: <p>We know how important a reliable electricity connection is. Which is why our crews are constantly working on fixing, improving and maintaining your connection. </p>

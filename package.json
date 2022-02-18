@@ -32,7 +32,7 @@
   "dependencies": {
     "@sitecore-jss/sitecore-jss-nextjs": "^19.0.2",
     "@sitecore-jss/sitecore-jss-tracking": "^19.0.2",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.6.1",
     "deep-equal": "^2.0.5",
     "graphql": "~15.4.0",
     "graphql-tag": "^2.11.0",

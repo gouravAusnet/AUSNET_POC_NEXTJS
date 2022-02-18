@@ -1,12 +1,7 @@
-@font-face {
-  font-family: 'Gilroy Regular';
-  src: local('Gilroy Regular'), url('/public/AusnetAssets/fonts/Gilroy-Regular.woff') format('woff');
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
 }
-@font-face {
-  font-family: 'Gilroy SemiBold';
-  src: local('Gilroy SemiBold'), url('/public/AusnetAssets/fonts/Gilroy-SemiBold.woff') format('woff');
-}
-
 
 a[target='_blank']:after {
   content: '\1F5D7'
@@ -30,10 +25,6 @@ a[target='_blank']:after {
 a{
   text-decoration: none !important;
 }
-body{
-  font-family: Gilroy Light;
-  font-style: normal;
-}
 
 
 .searchicon{
@@ -42,6 +33,7 @@ body{
   border-radius: 50%;
   background-color: #4574BF;
   position: relative;
+}
   .searchiconImg{
     line-height: 1;
     margin-top: 3px !important;
@@ -50,4 +42,94 @@ body{
     width:16px;
     height: 16px;
   }
+.home-container{
+  padding: 10px 2px 0 2px;
+}
+.left-section{
+  width: 42%;
+}
+.right-section{
+  width: 58%;
+  padding-left: 7%;
+}
+.carosal{
+  height: 150vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.banner-section{
+  display: flex;
+}
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.border-bottom{
+  border: none !important;
+}
+.para-text{
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  width: 78%;
+  color: #5E667D;
+}
+.header-title{
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 70px;
+  letter-spacing: -0.015em;
+}
+.sub-text{
+  font-size: 23px;
+  font-weight: 700;
+}
+.improveNetwork-text{
+  color: #ffffff;
+}
+.common-title{
+  color: #1D294E;
+}
+.change-title{
+  color: #4574BF;
+}
+.network-box{
+  background-color: #00836A;
+  padding: 10% 7% 10% 7%;
+  margin: 10% 0 10% 0;
+
+}
+.paraImprove-text{
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  width: 90%;
+}
+.outages-section{
+  color: #ffffff;
+  margin-right: 25px;
+  border-right: 2px solid #ffffff;
+  padding-right: 25px;
+  font-size: 35px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 600;
+}
+.last-outages{
+  border-right: none !important;
+}
+.outages-innersection{
+  font-size: 13px;
+    font-weight: 200;
+}
+
+.network-box:before {
+  content: "";
+  position: absolute;
+  top: 120.9%;
+  left: 49%;
+  width: 0px;
+  height: 0px;
+  border-bottom: 55px solid #fff;
+  border-right: 55px solid #11A770;
 }

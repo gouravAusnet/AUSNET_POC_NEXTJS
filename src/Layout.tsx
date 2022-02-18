@@ -108,8 +108,8 @@ const Layout = ({ sitecoreContext: { route } }: LayoutProps): JSX.Element => {
       {/* root placeholder for the app, which we add components to using route data */}
       <Navigation/>
       <div className="container">
-        Main Home page
         {/* <Placeholder name="jss-main" rendering={route} /> */}
+        <Placeholder name="jss-home" rendering={route} />
       </div>
       
     </React.Fragment>

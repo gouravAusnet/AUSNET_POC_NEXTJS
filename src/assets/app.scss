@@ -2,6 +2,17 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
 }
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #D3D3D3;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #6c757d;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #ffffff;  /* creates padding around scroll thumb */
+}
 
 a[target='_blank']:after {
   content: '\1F5D7'
@@ -53,7 +64,7 @@ a{
   padding-left: 7%;
 }
 .carosal{
-  height: 150vh;
+  height: 180vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -132,4 +143,32 @@ a{
   height: 0px;
   border-bottom: 55px solid #fff;
   border-right: 55px solid #11A770;
+}
+.arrowStyle{
+  width: 35px !important;
+  margin-right: 15px;
+}
+.ulinks{
+  padding: 0 !important;
+}
+.links{
+  display: flex;
+  list-style-type: none;
+    color: #4574BF;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+.carosal::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+.carosal::-webkit-scrollbar-track {
+  background: #ffffff;        /* color of the tracking area */
+}
+.carosal::-webkit-scrollbar-thumb {
+  background-color: #ffffff;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #ffffff;  /* creates padding around scroll thumb */
 }

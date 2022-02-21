@@ -10,7 +10,7 @@ const Navigation = ({childComponents}:any) => {
     const { t } = useI18n();
     return (
       <div>
-    <div className="align-items-center mt-2">
+    <div className="align-items-center">
       <div className="row mx-3">
 <div className='col-12 p-0  mr-md-auto'>
 <div className="row  border-bottom">
@@ -34,17 +34,17 @@ const Navigation = ({childComponents}:any) => {
           <Link href="/myHomeEneargy">
             
             <a className="p-2 text-secondary">
-            <i className="fa fa-light fa-user"></i>
-            {/* <Image src={personIcon} alt="Person icon"
-                layout="fixed"
+            {/* <i className="fa fa-light fa-user"></i> */}
+            <Image src={personIcon} alt="Person icon"
+                layout="intrinsic"
                 width={15}
-                height={15} /> */}
-              {t('header.mainMenu.myHomeEneargy')}</a>
+                height={15} />
+              <div className='personIcon'>{t('header.mainMenu.myHomeEneargy')}</div></a>
           </Link>
       </nav>
         </div>
         </div>
-        <div className="row mt-3">
+        <div className="row mt-2">
         <div className='col-4'>
 <h5 className="my-0 mr-md-auto font-weight-normal  ml-2">
           <Link href="/">
@@ -76,14 +76,14 @@ const Navigation = ({childComponents}:any) => {
           <Link href="/Outages">
             <a className="p-3 text-dark">{t('header.subMenu.Outages')}</a>
           </Link>
-          <span className="searchicon">
+          <div className="searchicon text-center">
           {/* <Image src={searchIcon} alt="Ausnet logo"
                 layout="fixed"
                 width={15}
                 height={15} 
                 className="searchiconImg"/> */}
                 <i className="fa fa-search"></i>
-          </span>
+          </div>
         </nav>
         </div>
         </div>

@@ -10,23 +10,11 @@ const Navigation = ({childComponents}:any) => {
     const { t } = useI18n();
     return (
       <div>
-    <div className="align-items-center border-bottom mt-2">
+    <div className="align-items-center mt-2">
       <div className="row mx-3">
-<div className='col-4'>
-<h5 className="my-0 mr-md-auto font-weight-normal  ml-2">
-          <Link href="/">
-            <a className="text-dark ml-3 my-2">
-              <Image src={ausnetLogo} alt="Ausnet logo"
-                layout="fixed"
-                width={100}
-                height={65} />
-            </a>
-          </Link>
-        </h5>
-</div>
-<div className='col-8  mr-md-auto '>
-<div className="row">
-      <div className="col-12">
+<div className='col-12 p-0  mr-md-auto'>
+<div className="row  border-bottom">
+      <div className="col-12 my-3">
       <nav className="my-2 my-md-0 float-right main-menu">
           <Link href="/About">
             <a className="p-2 text-secondary">{t('header.mainMenu.About')}</a>
@@ -46,17 +34,32 @@ const Navigation = ({childComponents}:any) => {
           <Link href="/myHomeEneargy">
             
             <a className="p-2 text-secondary">
-            <Image src={personIcon} alt="Person icon"
+            <i className="fa fa-light fa-user"></i>
+            {/* <Image src={personIcon} alt="Person icon"
                 layout="fixed"
                 width={15}
-                height={15} />
+                height={15} /> */}
               {t('header.mainMenu.myHomeEneargy')}</a>
           </Link>
       </nav>
         </div>
         </div>
         <div className="row mt-3">
-        <div className='col-12 sub-menu'>
+        <div className='col-4'>
+<h5 className="my-0 mr-md-auto font-weight-normal  ml-2">
+          <Link href="/">
+              <h3>
+                <a className="text-dark ml-3 my-2">Ausnet</a>
+                </h3>
+              {/* <Image src={ausnetLogo} alt="Ausnet logo"
+                layout="fixed"
+                width={100}
+                height={65} /> */}
+            
+          </Link>
+        </h5>
+</div>
+        <div className='col-8 sub-menu'>
         <nav className="my-2  float-right">
           <Link href="/Electricity">
             <a className="p-3 text-dark">{t('header.subMenu.Electricity')}</a>
@@ -74,11 +77,12 @@ const Navigation = ({childComponents}:any) => {
             <a className="p-3 text-dark">{t('header.subMenu.Outages')}</a>
           </Link>
           <span className="searchicon">
-          <Image src={searchIcon} alt="Ausnet logo"
+          {/* <Image src={searchIcon} alt="Ausnet logo"
                 layout="fixed"
                 width={15}
                 height={15} 
-                className="searchiconImg"/>
+                className="searchiconImg"/> */}
+                <i className="fa fa-search"></i>
           </span>
         </nav>
         </div>

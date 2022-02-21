@@ -53,6 +53,11 @@ a{
     width:16px;
     height: 16px;
   }
+  .fa-search{
+    color: white;
+    font-size: 14px;
+    margin-left: 2px;
+  }
 .home-container{
   padding: 10px 2px 0 2px;
 }
@@ -76,7 +81,7 @@ a{
   margin-right: 0 !important;
 }
 .border-bottom{
-  border: none !important;
+  border-bottom: 1px solid #5E667D;
 }
 .para-text{
   font-weight: 400;

@@ -1,3 +1,4 @@
+// ! Page should not be created this way!
 import React from 'react';
 import Navigation from 'components/Navigation/Navigation';
 // TODO: Remove css module

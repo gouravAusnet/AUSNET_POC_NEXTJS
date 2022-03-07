@@ -1,13 +1,15 @@
-import React from 'react'
-import './outages.module.scss';
+import React from 'react';
 import Navigation from 'components/Navigation/Navigation';
-interface OutagesProps {
-}
+// TODO: Remove css module
+import './outages.module.scss';
+
+interface OutagesProps {}
 
 export default function Outages({}: OutagesProps) {
-    return(<div>
-        <Navigation/>
-        <h2 className="mt-2 text-center">Outages content</h2>
-        </div>
-        )
+  return (
+    <div>
+      <Navigation />
+      <h2 className="mt-2 text-center">Outages content</h2>
+    </div>
+  );
 }

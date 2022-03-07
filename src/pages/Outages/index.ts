@@ -1,1 +1,1 @@
-export { default } from './Outages'
+export { default } from './Outages';

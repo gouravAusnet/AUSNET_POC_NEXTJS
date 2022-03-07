@@ -1,9 +1,6 @@
 const jssConfig = require('./src/temp/config');
 const packageConfig = require('./package.json').config;
-const {
-  constants,
-  getPublicUrl,
-} = require('@sitecore-jss/sitecore-jss-nextjs');
+const { constants, getPublicUrl } = require('@sitecore-jss/sitecore-jss-nextjs');
 
 const disconnectedServerUrl = `http://localhost:${process.env.PROXY_PORT || 3042}/`;
 const isDisconnected = process.env.JSS_MODE === constants.JSS_MODE.DISCONNECTED;
@@ -29,9 +26,14 @@ const nextConfig = {
     // prefixed path e.g. `/styleguide`.
     defaultLocale: packageConfig.language,
   },
-  
+
   // Enable React Strict Mode
   reactStrictMode: true,
+
+  // Linting Custom Directories and Files
+  eslint: {
+    dirs: ['src', 'data', 'sitecore/definitions', 'scripts'],
+  },
 
   async rewrites() {
     if (isDisconnected) {
@@ -91,7 +93,7 @@ const nextConfig = {
     applyGraphQLCodeGenerationLoaders(config, options);
 
     config.resolve.fallback = {
-      'sitecore/manifest/sitecore-import.json': false
+      'sitecore/manifest/sitecore-import.json': false,
     };
 
     return config;

@@ -16,7 +16,7 @@ export default function Home(manifest: Manifest): void {
       { name: 'commonCommunities', type: CommonFieldTypes.RichText },
       { name: 'improveNetwork', type: CommonFieldTypes.SingleLineText },
       { name: 'improveNetworkText', type: CommonFieldTypes.RichText },
-      ],
+    ],
     /*
     If the component implementation uses <Placeholder> or withPlaceholder to expose a placeholder,
     register it here, or components added to that placeholder will not be returned by Sitecore:

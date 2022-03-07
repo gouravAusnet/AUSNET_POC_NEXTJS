@@ -1,1 +1,1 @@
-export { default } from './Electricity'
+export { default } from './Electricity';

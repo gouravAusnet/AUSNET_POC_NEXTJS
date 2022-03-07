@@ -1,1 +1,1 @@
-export { default } from './Gas'
+export { default } from './Gas';

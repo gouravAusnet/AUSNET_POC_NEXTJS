@@ -10,8 +10,8 @@ import NProgress from 'nprogress';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'nprogress/nprogress.css';
 import 'assets/app.scss';
-import './../../public/AusnetAssets/fontawesomeIcons/css/all.css'
-import './../../public/AusnetAssets/fontawesomeIcons/css/fontawesome.min.css'
+import './../../public/AusnetAssets/fontawesomeIcons/css/all.css';
+import './../../public/AusnetAssets/fontawesomeIcons/css/fontawesome.min.css';
 NProgress.configure({ showSpinner: false, trickleSpeed: 100 });
 
 Router.events.on('routeChangeStart', () => NProgress.start());

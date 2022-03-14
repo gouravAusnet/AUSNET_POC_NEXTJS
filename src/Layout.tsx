@@ -7,6 +7,9 @@ import {
   getPublicUrl,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { StyleguideSitecoreContextValue } from 'lib/component-props';
+import Navigation from 'components/Navigation/Navigation';
+import AusnetFooter from 'components/AusnetFooter/AusnetFooter';
+
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
 const publicUrl = getPublicUrl();
@@ -17,7 +20,7 @@ interface LayoutProps {
 
 const Layout = ({ sitecoreContext: { route } }: LayoutProps): JSX.Element => {
 
-  
+
   return (
     <React.Fragment>
       <Head>
@@ -36,12 +39,14 @@ const Layout = ({ sitecoreContext: { route } }: LayoutProps): JSX.Element => {
 
       {/* <Navigation/> */}
       {/* root placeholder for the app, which we add components to using route data */}
-      
+
       <div className="home-container">
-        {/* <Placeholder name="jss-main" rendering={route} /> */}
+        <Navigation />
         <Placeholder name="jss-home" rendering={route} />
+        <AusnetFooter />
+        {/* <Placeholder name="jss-main" rendering={route} /> */}
       </div>
-      
+
     </React.Fragment>
   );
 };

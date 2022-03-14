@@ -39,7 +39,7 @@ const Layout = ({ sitecoreContext: { route } }: LayoutProps): JSX.Element => {
       
       <div className="home-container">
         {/* <Placeholder name="jss-main" rendering={route} /> */}
-        {/* <Placeholder name="jss-home" rendering={route} /> */}
+        <Placeholder name="jss-home" rendering={route} />
       </div>
       
     </React.Fragment>

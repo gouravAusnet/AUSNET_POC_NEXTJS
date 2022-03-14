@@ -19,15 +19,15 @@ fields:
 # Define the page layout starting at the root placeholder - in this case, 'jss-main'
 # root placeholder names are defined in the package.json config section (required for Sitecore deployment)
 placeholders:
-  jss-main:
-    - componentName: ContentBlock
-      fields:
-        heading: AusNet POC
-        # to author content in YAML, use _multi-line values_ (prefixed with | + endline)
-        # as long as the same indent is preserved at the beginning of each line, no escaping
-        # is required at all in the value, making it easy to read
-        content: |
-          <p>Thanks for using JSS!! Here are some resources to get you started:</p>
+  # jss-main:
+  #   - componentName: ContentBlock
+  #     fields:
+  #       heading: AusNet POC
+  #       to author content in YAML, use _multi-line values_ (prefixed with | + endline)
+  #       as long as the same indent is preserved at the beginning of each line, no escaping
+  #       is required at all in the value, making it easy to read
+  #       content: |
+  #         <p>Thanks for using JSS!! Here are some resources to get you started:</p>
   jss-home:
     - componentName: Home
       fields:

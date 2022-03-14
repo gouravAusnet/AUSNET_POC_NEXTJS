@@ -1,0 +1,103 @@
+.footerMain{
+    background-color: #1D294E;
+    color: white;
+    @mixin blue-border{
+        border: 1px solid #4574BF;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .fa-arrow-right{
+        @include blue-border;
+        }
+    .getIn{
+font-size: 20px;
+line-height: 28px;
+    }
+    .getIn2{
+
+        font-weight: 600;
+    }
+    .cantFind{
+        font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 24px;
+    }
+    .labelBlock{
+        display: block;
+        width: 100%;
+    .labels{
+        color: white;
+    }
+}
+    .socialBox{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 75%;
+        .socialIcon{
+            @include blue-border;
+            width: 30px;
+            height: 30px;
+            min-width: 30px;
+            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            text-align: center;
+        }
+    }
+   
+    
+}
+@media (min-width:500px) and (max-width: 800px) {
+    .labelBlock{
+        display: block;
+        width: 100%;
+    }
+    .socialBox{
+        max-width: 0;
+        .socialIcon{
+            margin-right: 3px;
+        }
+    }
+   
+}
+@media (max-width: 500px) {
+    .footerMain{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        .getIn{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            .fa{
+                margin-right: 25px;
+            }
+        }
+        .links{
+            .row{
+                .col-12{
+                    padding-left: 0;
+                    padding-right: 0;
+                    a{
+                        margin-left: 0 !important;
+                    }
+                }
+            }
+            .labelBlock{
+                display: inline-block;
+                max-width: 50%;
+                width: 50%;
+            }
+        }
+        
+        .socialBox{
+            margin-top: 25px;
+        }
+        .ausnet{
+            h3{
+            float: left !important;
+            margin-top: 40px;
+        }
+        }
+    }
+}

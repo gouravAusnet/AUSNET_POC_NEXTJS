@@ -26,7 +26,7 @@ const Home = (props: HomeProps): JSX.Element => (
     <div className='carosal left-section'>
       {
         banners.map((banner) =>
-          <Image className="d-block w-100" src={banner} alt="AusNet slide" />)
+          <Image className="d-block w-100" key="ausnetSlide" src={banner} alt="AusNet slide" />)
       }
     </div>
     <div className='right-section'>
@@ -37,10 +37,10 @@ const Home = (props: HomeProps): JSX.Element => (
       <RichText className='para-text' field={props.fields.contentCommunities} />
       <div className='carosalBtn'>
         <div className="carosalarrowStyle">
-          <Image className="d-block w-100" src={carosalLeft} alt="AusNet slide" />
+          <Image className="d-block w-100" key="ausnetSlide1"  src={carosalLeft} alt="AusNet slide" />
         </div>
         <div className="carosalarrowStyle">
-          <Image className="d-block w-100" src={carosalRight} alt="AusNet slide" />
+          <Image className="d-block w-100" key="ausnetSlide3"  src={carosalRight} alt="AusNet slide" />
         </div>
       </div>
       <div className='network-container'>
@@ -59,6 +59,7 @@ const Home = (props: HomeProps): JSX.Element => (
               layout="fixed"
               width={'50px'}
               height={'20px'}
+              key="networksearch" 
               className="networksearchiconImg" />
           </div>
         </div>
@@ -81,20 +82,20 @@ const Home = (props: HomeProps): JSX.Element => (
       <ul className='ulinks'>
         <li className='links'>
           <div className="arrowStyle">
-            <Image className="d-block w-100" src={arrowButton} alt="AusNet slide" />
+            <Image key="arrowBtn"  className="d-block w-100" src={arrowButton} alt="AusNet slide" />
           </div>
 
           Connect my electricity
         </li>
         <li className='links'>
           <div className="arrowStyle">
-            <Image className=" arrowStyle d-block w-100" src={arrowButton} alt="AusNet slide" />
+            <Image key="arrowBtn1"  className=" arrowStyle d-block w-100" src={arrowButton} alt="AusNet slide" />
           </div>
           Connect my solar
         </li>
         <li className='links'>
           <div className="arrowStyle">
-            <Image className="arrowStyle d-block w-100" src={arrowButton} alt="AusNet slide" />
+            <Image key="arrowBtn3"  className="arrowStyle d-block w-100" src={arrowButton} alt="AusNet slide" />
           </div>
           Connect my gas
         </li>

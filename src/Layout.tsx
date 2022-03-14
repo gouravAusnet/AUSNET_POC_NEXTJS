@@ -1,10 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import deepEqual from 'deep-equal';
-import Navigation from 'components/Navigation/Navigation';
 import {
   Placeholder,
-  VisitorIdentification,
   withSitecoreContext,
   getPublicUrl,
 } from '@sitecore-jss/sitecore-jss-nextjs';
@@ -108,7 +106,6 @@ const Layout = ({ sitecoreContext: { route } }: LayoutProps): JSX.Element => {
       {/* root placeholder for the app, which we add components to using route data */}
       
       <div className="home-container">
-        <Navigation/>
         {/* <Placeholder name="jss-main" rendering={route} /> */}
         <Placeholder name="jss-home" rendering={route} />
       </div>

@@ -17,7 +17,12 @@ body::-webkit-scrollbar-thumb {
 a[target='_blank']:after {
   content: '\1F5D7'
 }
-
+a{
+  color: #4574BF;
+}
+li{
+  list-style-type: none;
+}
 .form-control::-webkit-input-placeholder { 
   color: #ffffff;
 }
@@ -75,9 +80,9 @@ a{
     margin-top: 9px;
     margin-right: 2px;
   }
-.home-container{
-  padding: 0 2px 0 2px;
-}
+// .home-container{
+//   padding: 0 2px 0 2px;
+// }
 .left-section{
   width: 45%;
 }
@@ -125,6 +130,12 @@ a{
   color: #1D294E;
 }
 .change-title{
+  color: #4574BF;
+}
+.keeping-title{
+  color: #FFFFFF;
+}
+.community-title{
   color: #4574BF;
 }
 .network-box{
@@ -185,7 +196,7 @@ a{
 .network-box:before {
   content: "";
   position: absolute;
-  top: 140.3%;
+  top: 115.8%;
   left: 52.2%;
   width: 0px;
   height: 0px;
@@ -198,6 +209,7 @@ a{
 .arrowStyle{
   width: 35px !important;
   margin-right: 15px;
+  margin-bottom: 5px;
 }
 .carosalBtn{
   display: flex;
@@ -234,4 +246,106 @@ a{
 margin-left: 5px;
 display: inline-block;
   }
+}
+
+
+
+
+.home-container{
+display: grid;
+}
+.nav-display{
+  display: grid;
+}
+.text-secondary{
+
+}
+.subTab{
+  display: flex;
+}
+.searchIcon{
+  background: #4574BF;
+  width: 12%;
+  padding-top: 9px;
+  border-radius: 50px;
+}
+.text-sab{
+  color: #000;
+}
+.navsabTabs{
+  border-top: 1px solid #d6d6d6;
+  padding: 8px 0 8px 0;
+}
+.navTabs{
+  padding: 14px 0 5px 0px;
+}
+.logoIcon{
+  font-size: 25px;
+  margin-left: 30px;
+}
+.keep-our-comm-safe{
+  background-color: #1D294E;
+}
+.contentImg{
+  width: 48%;
+}
+.reportOutage{
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 25px;
+}
+.contentImage-text{
+  padding: 8%;
+  width: 35%;
+}
+.contentImage-Section{
+  display: flex;
+}
+.reportOutageText{
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+}
+.reportLinks{
+  display: flex;
+}
+.reportLinks a{
+  color: #FFFFFF !important;
+}
+.promationTile{
+  background: #162245;
+  margin-right: 2.5%;
+}
+.lifeImg{
+  width: 10%;
+}
+.promationTile-section{
+  padding: 55px;
+}
+.news-section{
+  display: flex;
+}
+.news-title{
+  color: #4574BF;
+}
+.news-Content{
+  color: #1D294E;
+  font-size: 20px;
+  font-weight: 700;
+}
+.news-right-section{
+  margin-left: 10%;
+}
+.news-card{
+  padding: 1% 3% 1% 0;
+  height: 20%;
+  border-top: 1px solid #E5ECF2;
+  border-bottom: 1px solid #E5ECF2;
+}
+.newsImg-section{
+  height: 100vh;
+}
+.moreStories{
+  color: #4574BF;
+  font-size: 15px;
 }

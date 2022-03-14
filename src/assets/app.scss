@@ -1,3 +1,6 @@
+@import "./../components/AusnetFooter/ausnet-footer.module.scss";
+@import "./../components/Navigation/Navigation.module.scss";
+@import "./global.scss";
 body{
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -64,7 +67,11 @@ a{
   border-radius: 50%;
   background-color: #4574BF;
   position: relative;
+  margin-top: 14px;
 
+}
+.searchicon-responsive{
+  display: none;
 }
   .searchiconImg{
     line-height: 1;

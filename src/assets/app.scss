@@ -1,31 +1,35 @@
-@import "./../components/AusnetFooter/ausnet-footer.module.scss";
-@import "./../components/Navigation/Navigation.module.scss";
-@import "../components/Home/home.scss";
-@import "./global.scss";
-body{
+@import './../components/AusnetFooter/ausnet-footer.module.scss';
+@import './../components/Navigation/Navigation.module.scss';
+@import '../components/Home/home.scss';
+@import './global.scss';
+
+body {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
 }
+
 body::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 12px; /* width of the entire scrollbar */
 }
+
 body::-webkit-scrollbar-track {
-  background: #D3D3D3;        /* color of the tracking area */
+  background: #d3d3d3; /* color of the tracking area */
 }
+
 body::-webkit-scrollbar-thumb {
-  background-color: #6c757d;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid #ffffff;  /* creates padding around scroll thumb */
+  background-color: #6c757d; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #ffffff; /* creates padding around scroll thumb */
 }
 
 a[target='_blank']:after {
-  content: '\1F5D7'
+  content: '\1F5D7';
 }
-a{
-  color: #4574BF;
+
+a {
+  color: #4574bf;
 }
-li{
+
+li {
   list-style-type: none;
 }
-
-

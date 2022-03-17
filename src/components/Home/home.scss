@@ -114,12 +114,7 @@ a {
 .change-title {
   color: #4574bf;
 }
-.keeping-title {
-  color: #ffffff;
-}
-.community-title {
-  color: #4574bf;
-}
+
 .network-box {
   background-color: #00836a;
   padding: 10% 7% 10% 7%;
@@ -253,21 +248,17 @@ a {
   font-size: 25px;
   margin-left: 30px;
 }
+
 .keep-our-comm-safe {
-  background-color: #1d294e;
-}
-.contentImg {
-  width: 48%;
+  background-color: $brand-dark-blue;
+  padding-top: 8rem;
 }
 .reportOutage {
   color: #ffffff;
   font-weight: 700;
   font-size: 25px;
 }
-.contentImage-text {
-  padding: 8%;
-  width: 35%;
-}
+
 .contentImage-Section {
   display: flex;
 }

@@ -1,0 +1,91 @@
+/* Content Image Block */
+.content-image-block {
+  &__title {
+    @include desk-h1;
+    padding-left: 3rem;
+
+    span {
+      display: block;
+    }
+    span:first-child {
+      color: $shades-white;
+    }
+    span:last-child {
+      color: $brand-blue;
+    }
+  }
+
+  &__content {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    display: flex;
+  }
+
+  &__image {
+    width: 49%;
+    max-height: 489px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 458px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    h3 {
+      @include desk-h3;
+      margin-bottom: 2rem;
+    }
+    p {
+      @include desk-body-large;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__cta {
+    @include desk-h5;
+    display: flex;
+    align-items: center;
+
+    span {
+      display: inline-flex;
+      margin-right: 1.25rem;
+      img {
+        width: 44px;
+        height: 44px;
+      }
+    }
+  }
+
+  &.Grey,
+  &.White {
+    h3 {
+      color: $brand-dark-blue;
+    }
+    p {
+      color: $neutrals-text-light;
+    }
+    a {
+      color: $brand-blue;
+    }
+  }
+  &.Grey {
+    background-color: $neutrals-light-grey-bg;
+  }
+  &.White {
+    background-color: $shades-white;
+  }
+  &.Dark {
+    background-color: $brand-dark-blue;
+    h3,
+    a {
+      color: $shades-white;
+    }
+    p {
+      color: $shades-white-80;
+    }
+  }
+}

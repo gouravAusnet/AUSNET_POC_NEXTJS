@@ -1,8 +1,16 @@
 import type { LinkField, ImageField, Field } from '@sitecore-jss/sitecore-jss-nextjs';
+import type { ContentImageBlockProps } from 'components/container/ContentImageBlock/ContentImageBlock';
+
 import { Text, Image, Link, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
 import { StyleguideComponentProps } from 'lib/component-props';
+import ContentImageBlock from 'components/container/ContentImageBlock/ContentImageBlock';
 import LeftComponent from '../LeftComponent';
 import RightComponenet from '../RightComponent';
+
+import json from 'assets/sitecore.json';
+
+const contentImageBlockProps = json.sitecore.route.placeholders['jss-main'][0]
+  .fields as unknown as ContentImageBlockProps['fields'];
 
 type HomeProps = StyleguideComponentProps & {
   fields: {
@@ -73,31 +81,9 @@ const Home = (props: HomeProps): JSX.Element => (
     </div>
 
     <div className="keep-our-comm-safe">
-      <div className="content-image-block">
-        <p style={{ display: 'grid' }}>
-          <span className="header-title keeping-title">Keeping our</span>
-          <span className="header-title community-title">community safe</span>
-        </p>
-        <div className="contentImage-Section">
-          <Image className="d-block contentImg" media={props.fields.contentImage} />
-          <div className="contentImage-text">
-            <p className="reportOutage">
-              <Text field={props.fields.reportOutage} />
-            </p>
-            <p className="reportOutageText">
-              <Text field={props.fields.reportOutageText} />
-            </p>
-            <li className="reportLinks">
-              <div className="arrowStyle">
-                <Image className="d-block w-100" media={props.fields.arrowButtonBorder} />
-              </div>
-              <Link field={props.fields.reportLinks} />
-            </li>
-          </div>
-        </div>
-      </div>
+      <ContentImageBlock fields={contentImageBlockProps} />
 
-      <div className="promationTile-section container">
+      <section className="promationTile-section container">
         <div className="row">
           <div className="card promationTile col" style={{ width: '22%' }}>
             <div className="card-body">
@@ -151,7 +137,7 @@ const Home = (props: HomeProps): JSX.Element => (
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
     <div className="Latest-News">

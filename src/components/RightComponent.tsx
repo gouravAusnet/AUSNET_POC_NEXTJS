@@ -1,7 +1,7 @@
 import type { LinkField, ImageField, Field } from '@sitecore-jss/sitecore-jss-nextjs';
 import { Text, Image, Link, RichText } from '@sitecore-jss/sitecore-jss-nextjs';
 
-import HomepageCarousel from './HomepageCarousel';
+import HomepageCarousel from './container/HomepageCarousel/HomepageCarousel';
 
 type RightComponentProps = {
   headingCommunities: Field<string>;

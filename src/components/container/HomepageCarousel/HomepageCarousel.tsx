@@ -19,6 +19,11 @@ type HomepageCarouselProps = {
   };
 };
 
+/**
+ * Homepage Carousel component
+ * Read more: https://ausnetservices-adaptivedelivery.atlassian.net/wiki/spaces/DD/pages/2279246671/E02.M01+-+Homepage+carousel
+ *
+ */
 export default function HomepageCarousel({ fields }: HomepageCarouselProps): JSX.Element {
   const controls = useAnimation();
   const [carouselCounter, setCarouselCounter] = useState(0);

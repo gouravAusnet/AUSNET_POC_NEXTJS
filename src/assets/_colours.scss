@@ -1,0 +1,36 @@
+// Shades
+$shades-black-50: rgba(0, 0, 0, 0.5);
+$shades-white: #ffffff;
+
+// Neutrals
+$neutrals-text-light: #5e667d;
+$neutrals-lightest-graphical-and-ui-components: #8995aa;
+$neutrals-divider-on-grey-bg: #d4dbe5;
+$neutrals-divider-on-white-bg: #e5ecf2;
+$neutrals-menu-border: rgba(229, 236, 242, 0.5);
+$neutrals-light-grey-bg: #eff3f8;
+
+// Brand
+$brand-dark-blue: #1d294e;
+$brand-blue: #4574bf;
+$brand-blue-hover: #3869b8;
+$brand-promo-tile-bg: #162245;
+
+// Fuels
+$fuels-electricity-green-1: #00836a;
+$fuels-electricity-green-2: #11a770;
+$fuels-solar-yellow: #ffcb04;
+$fuels-gas-blue: #1da1bf;
+
+// Alerts
+$alerts-error: #d1325a;
+$alerts-warning: #e1711f;
+$alerts-information: #0e90c0;
+$alerts-success: #12b57a;
+$alerts-error-12: rgba(209, 50, 90, 0.12);
+$alerts-warning-12: rgba(225, 113, 31, 0.12);
+$alerts-information-12: rgba(14, 144, 192, 0.12);
+$alerts-success-12: rgba(18, 181, 122, 0.12);
+
+// Functionality
+$button-states-red-hover: #c21c46;

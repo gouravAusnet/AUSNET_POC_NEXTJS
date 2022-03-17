@@ -1,0 +1,150 @@
+/* Desktop Type */
+@mixin desk-h1 {
+  font-family: Gilroy, Arial, Helvetica, sans-serif;
+  font-weight: 800; // extrabold
+  font-size: 90px;
+  letter-spacing: -0.015rem;
+  line-height: 96px;
+}
+
+@mixin desk-h2 {
+  font-weight: 700; // bold
+  font-size: 48px;
+  letter-spacing: -0.5;
+}
+
+@mixin desk-h3 {
+  font-weight: 700; // bold
+  font-size: 36px;
+  letter-spacing: 0;
+}
+
+@mixin desk-h4 {
+  font-weight: 700; // bold
+  font-size: 28px;
+  letter-spacing: 0;
+}
+
+@mixin desk-h5 {
+  font-weight: 600; // semibold
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+@mixin desk-h6 {
+  font-weight: 600; // semibold
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+@mixin desk-h7 {
+  font-weight: 600; // semibold
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+@mixin desk-intro {
+  font-weight: 500; // medium
+  font-size: 28px;
+  letter-spacing: 0;
+}
+
+@mixin desk-body-large {
+  font-weight: 400; // medium
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+
+@mixin desk-body-medium {
+  font-weight: 500; // medium
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+@mixin desk-body-small {
+  font-weight: 500; // medium
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+@mixin desk-overline {
+  font-weight: 700; // bold
+  font-size: 14px;
+  letter-spacing: 10;
+  text-transform: uppercase;
+}
+
+/* Mobile Type */
+@mixin mobile-h1 {
+  font-weight: 800; // extrabold
+  font-size: 44px;
+  letter-spacing: -1.5;
+}
+
+@mixin mobile-h2 {
+  font-weight: 700; // bold
+  font-size: 32px;
+  letter-spacing: -0.5;
+}
+
+@mixin mobile-h3 {
+  font-weight: 700; // bold
+  font-size: 28px;
+  letter-spacing: 0;
+}
+
+@mixin mobile-h4 {
+  font-weight: 700; // bold
+  font-size: 24px;
+  letter-spacing: 0;
+}
+
+@mixin mobile-h5 {
+  font-weight: 600; // semibold
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+@mixin mobile-h6 {
+  font-weight: 600; // semibold
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+@mixin mobile-h7 {
+  font-weight: 600; // semibold
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+@mixin mobile-intro {
+  font-weight: 500; // medium
+  font-size: 28px;
+  letter-spacing: 0;
+}
+
+@mixin mobile-body-large {
+  font-weight: 500; // medium
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+@mixin mobile-body-medium {
+  font-weight: 500; // medium
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+@mixin mobile-body-small {
+  font-weight: 500; // medium
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+@mixin mobile-overline {
+  font-weight: 700; // bold
+  font-size: 12px;
+  letter-spacing: 10;
+  text-transform: uppercase;
+}

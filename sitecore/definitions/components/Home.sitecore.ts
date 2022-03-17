@@ -12,7 +12,14 @@ export default function Home(manifest: Manifest): void {
     icon: SitecoreIcon.DocumentTag,
     fields: [
       { name: 'heading', type: CommonFieldTypes.SingleLineText },
-      { name: 'contentCommunities', type: CommonFieldTypes.RichText },
+      { name: 'headingCommunities', type: CommonFieldTypes.SingleLineText },
+      { name: 'headingElectricity', type: CommonFieldTypes.SingleLineText },
+      { name: 'headingSolar', type: CommonFieldTypes.SingleLineText },
+      { name: 'headingGas', type: CommonFieldTypes.SingleLineText },
+      { name: 'bodyCommunities', type: CommonFieldTypes.MultiLineText },
+      { name: 'bodyElectricity', type: CommonFieldTypes.MultiLineText },
+      { name: 'bodySolar', type: CommonFieldTypes.MultiLineText },
+      { name: 'bodyGas', type: CommonFieldTypes.MultiLineText },
       { name: 'commonCommunities', type: CommonFieldTypes.RichText },
       { name: 'improveNetwork', type: CommonFieldTypes.SingleLineText },
       { name: 'improveNetworkText', type: CommonFieldTypes.RichText },
@@ -34,7 +41,9 @@ export default function Home(manifest: Manifest): void {
       { name: 'MoreStories', type: CommonFieldTypes.GeneralLink },
       { name: 'arrowButton', type: CommonFieldTypes.Image },
       { name: 'arrowButtonBorder', type: CommonFieldTypes.Image },
-      ],
+      { name: 'carouselLeft', type: CommonFieldTypes.Image },
+      { name: 'carouselRight', type: CommonFieldTypes.Image },
+    ],
     /*
     If the component implementation uses <Placeholder> or withPlaceholder to expose a placeholder,
     register it here, or components added to that placeholder will not be returned by Sitecore:

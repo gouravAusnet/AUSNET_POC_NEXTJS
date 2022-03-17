@@ -31,68 +31,81 @@ placeholders:
   jss-home:
     - componentName: Home
       fields:
-          heading: Energising futures
-          improveNetwork: Improving your network
-          contentCommunities: <p>We operate the Victorian electricity transmission network, connecting and supplying power to 6.8 million Australians.  You don’t pay your bills to us but if you turned on a light or switched on the TV, we helped make that happen.</p>
-          commonCommunities: <p>We connect customers to electricity, solar and gas. Whether you’re a resident or business, if you have a property that’s not connected to the network, AusNet Services can help.</p>
-          improveNetworkText: <p>We know how important a reliable electricity connection is. Which is why our crews are constantly working on fixing, improving and maintaining your connection. </p>
-          imgBanner:
-                src: /data/media/img/banner1.png
-                alt: Sitecore Logo
-          contentImage:
-                src: /data/media/img/content-img.png
-                alt: Sitecore Logo
-          lifeImage:
-                src: /data/media/img/life.png
-                alt: Sitecore Logo
-          newsImg:
-                src: /data/media/img/newsImg.png
-                alt: Sitecore Logo
-          connectElectricity: 
-                href: https://dev.sitecore.net
-                text: Connect my electricity
-                # target: _blank
-                # class: font-weight-bold
-                # title: <a> title attribute
-          connectSolar: 
-                href: https://dev.sitecore.net
-                text: Connect my solar
-                # target: _blank
-                # class: font-weight-bold
-                # title: <a> title attribute
-          connectGas: 
-                href: https://dev.sitecore.net
-                text: Connect my gas
-                # target: _blank
-                # class: font-weight-bold
-                # title: <a> title attribute
-          reportLinks: 
-                href: https://dev.sitecore.net
-                text: Report an outage
-                # target: _blank
-                # class: font-weight-bold
-                # title: <a> title attribute
-          reportOutage: Report an outage
-          reportOutageText: Report unplanned electricity outages, network damage and gas problems.
-          tileText1: Register as a life support customer
-          tilecontentText1: If you rely on medical equipment, we can provide you extra support during an outage.
-          tileLink1: 
-                href: https://dev.sitecore.net
-                text: Register
-                # target: _blank
-                # class: font-weight-bold
-                # title: <a> title attribute
-          newsTile: Electricity
-          newsContent: Richmond terminal station equipment gets an upgrade
-          MoreStories: 
-                href: https://dev.sitecore.net
-                text: More stories
-                # target: _blank
-                # class: font-weight-bold
-                # title: <a> title attribute
-          arrowButton:
-                src: /data/media/img/arrowButton.png
-                alt: Sitecore Logo
-          arrowButtonBorder:
-                src: /data/media/img/arrowButtonBorder.png
-                alt: Sitecore Logo
+        heading: Energising futures
+        improveNetwork: Improving your network
+        headingCommunities: Communities
+        headingElectricity: Electricity
+        headingSolar: Solar
+        headingGas: Gas
+        bodyCommunities: We operate the Victorian electricity transmission network, connecting and supplying power to 6.8 million Australians.  You don’t pay your bills to us but if you turned on a light or switched on the TV, we helped make that happen.
+        bodyElectricity: We operate the Victorian electricity transmission network, connecting and supplying power to 6.8 million Australians.  You don’t pay your bills to us but if you turned on a light or switched on the TV, we helped make that happen.
+        bodySolar: We operate the Victorian electricity transmission network, connecting and supplying power to 6.8 million Australians.  You don’t pay your bills to us but if you turned on a light or switched on the TV, we helped make that happen.
+        bodyGas: We operate the Victorian electricity transmission network, connecting and supplying power to 6.8 million Australians.  You don’t pay your bills to us but if you turned on a light or switched on the TV, we helped make that happen.
+        commonCommunities: <p>We connect customers to electricity, solar and gas. Whether you’re a resident or business, if you have a property that’s not connected to the network, AusNet Services can help.</p>
+        improveNetworkText: <p>We know how important a reliable electricity connection is. Which is why our crews are constantly working on fixing, improving and maintaining your connection. </p>
+        imgBanner:
+          src: /data/media/img/banner1.png
+          alt: Sitecore Logo
+        contentImage:
+          src: /data/media/img/content-img.png
+          alt: Sitecore Logo
+        lifeImage:
+          src: /data/media/img/life.png
+          alt: Sitecore Logo
+        newsImg:
+          src: /data/media/img/newsImg.png
+          alt: Sitecore Logo
+        connectElectricity:
+          href: https://dev.sitecore.net
+          text: Connect my electricity
+          # target: _blank
+          # class: font-weight-bold
+          # title: <a> title attribute
+        connectSolar:
+          href: https://dev.sitecore.net
+          text: Connect my solar
+          # target: _blank
+          # class: font-weight-bold
+          # title: <a> title attribute
+        connectGas:
+          href: https://dev.sitecore.net
+          text: Connect my gas
+          # target: _blank
+          # class: font-weight-bold
+          # title: <a> title attribute
+        reportLinks:
+          href: https://dev.sitecore.net
+          text: Report an outage
+          # target: _blank
+          # class: font-weight-bold
+          # title: <a> title attribute
+        reportOutage: Report an outage
+        reportOutageText: Report unplanned electricity outages, network damage and gas problems.
+        tileText1: Register as a life support customer
+        tilecontentText1: If you rely on medical equipment, we can provide you extra support during an outage.
+        tileLink1:
+          href: https://dev.sitecore.net
+          text: Register
+          # target: _blank
+          # class: font-weight-bold
+          # title: <a> title attribute
+        newsTile: Electricity
+        newsContent: Richmond terminal station equipment gets an upgrade
+        MoreStories:
+          href: https://dev.sitecore.net
+          text: More stories
+          # target: _blank
+          # class: font-weight-bold
+          # title: <a> title attribute
+        arrowButton:
+          src: /data/media/img/arrowButton.png
+          alt: Sitecore Logo
+        arrowButtonBorder:
+          src: /data/media/img/arrowButtonBorder.png
+          alt: Sitecore Logo
+        carouselLeft:
+          src: /data/media/img/carouselLeft.png
+          alt: Left button
+        carouselRight:
+          src: /data/media/img/carouselRight.png
+          alt: Right button

@@ -86,6 +86,7 @@ a {
 .border-bottom {
   border-bottom: 1px solid #5e667d;
 }
+
 .para-text {
   font-weight: 400;
   font-size: 17px;
@@ -93,6 +94,7 @@ a {
   width: 78%;
   color: #5e667d;
 }
+
 .header-title {
   font-weight: 700;
   font-size: 65px;
@@ -191,15 +193,11 @@ a {
   margin-right: 15px;
   margin-bottom: 5px;
 }
-.carosalBtn {
-  display: flex;
-}
-.carosalarrowStyle {
-  width: 35px !important;
-}
+
 .ulinks {
   padding: 0 !important;
 }
+
 .links {
   display: flex;
   list-style-type: none;
@@ -320,4 +318,64 @@ a {
 .moreStories {
   color: #4574bf;
   font-size: 15px;
+}
+
+/* Homepage Carousel */
+.carousel {
+  max-width: 33.75rem;
+
+  &__heading {
+    @include desk-h1;
+
+    margin-bottom: 2rem;
+    span {
+      display: block;
+    }
+  }
+
+  &__heading--2 {
+    &.communities {
+      color: $brand-blue;
+    }
+
+    &.electricity {
+      color: $fuels-electricity-green-2;
+    }
+
+    &.solar {
+      color: $fuels-solar-yellow;
+    }
+
+    &.gas {
+      color: $fuels-gas-blue;
+    }
+  }
+
+  &__body {
+    @include desk-body-large;
+
+    color: $neutrals-text-light;
+    margin-bottom: 2rem;
+  }
+
+  .carousel__btn-group {
+    display: flex;
+
+    > :first-child {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .carousel__btn {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 100%;
+
+    img {
+      width: 44px;
+      height: 44px;
+    }
+  }
 }

@@ -1,7 +1,6 @@
-@import './../components/AusnetFooter/ausnet-footer.module.scss';
-@import './../components/Navigation/Navigation.module.scss';
-@import '../components/Home/home.scss';
-@import './global.scss';
+@import './typography';
+@import './colours';
+@import './surfaces';
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -33,3 +32,8 @@ a {
 li {
   list-style-type: none;
 }
+
+@import './global.scss';
+@import '../components/AusnetFooter/ausnet-footer.module.scss';
+@import '../components/Navigation/Navigation.module.scss';
+@import '../components/Home/home.scss';

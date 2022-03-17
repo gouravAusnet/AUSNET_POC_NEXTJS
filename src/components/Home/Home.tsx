@@ -1,12 +1,5 @@
-import {
-  Text,
-  Image,
-  Link,
-  LinkField,
-  ImageField,
-  Field,
-  withDatasourceCheck,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+import type { LinkField, ImageField, Field } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Text, Image, Link, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
 import { StyleguideComponentProps } from 'lib/component-props';
 import LeftComponent from '../LeftComponent';
 import RightComponenet from '../RightComponent';
@@ -14,7 +7,14 @@ import RightComponenet from '../RightComponent';
 type HomeProps = StyleguideComponentProps & {
   fields: {
     heading: Field<string>;
-    contentCommunities: Field<string>;
+    headingCommunities: Field<string>;
+    headingElectricity: Field<string>;
+    headingSolar: Field<string>;
+    headingGas: Field<string>;
+    bodyCommunities: Field<string>;
+    bodyElectricity: Field<string>;
+    bodySolar: Field<string>;
+    bodyGas: Field<string>;
     commonCommunities: Field<string>;
     improveNetwork: Field<string>;
     improveNetworkText: Field<string>;
@@ -36,6 +36,8 @@ type HomeProps = StyleguideComponentProps & {
     MoreStories: LinkField;
     arrowButton: ImageField;
     arrowButtonBorder: ImageField;
+    carouselLeft: ImageField;
+    carouselRight: ImageField;
   };
 };
 
@@ -48,7 +50,14 @@ const Home = (props: HomeProps): JSX.Element => (
 
       <div className="jss-main-sub-right right-section">
         <RightComponenet
-          contentCommunities={props.fields.contentCommunities}
+          headingCommunities={props.fields.headingCommunities}
+          bodyCommunities={props.fields.bodyCommunities}
+          headingElectricity={props.fields.headingElectricity}
+          bodyElectricity={props.fields.bodyElectricity}
+          headingSolar={props.fields.headingSolar}
+          bodySolar={props.fields.bodySolar}
+          headingGas={props.fields.headingGas}
+          bodyGas={props.fields.bodyGas}
           improveNetwork={props.fields.improveNetwork}
           improveNetworkText={props.fields.improveNetworkText}
           heading={props.fields.heading}
@@ -57,6 +66,8 @@ const Home = (props: HomeProps): JSX.Element => (
           connectSolar={props.fields.connectSolar}
           connectGas={props.fields.connectGas}
           arrowButton={props.fields.arrowButton}
+          carouselLeft={props.fields.carouselLeft}
+          carouselRight={props.fields.carouselRight}
         />
       </div>
     </div>

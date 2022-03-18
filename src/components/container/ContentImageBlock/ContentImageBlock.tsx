@@ -1,7 +1,8 @@
 import type { Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
-import { Text, Link, Image } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Text, Image } from '@sitecore-jss/sitecore-jss-nextjs';
 import clsx from 'clsx';
 import { useMemo } from 'react';
+import PrimaryButton from 'components/container/PrimaryButton/PrimaryButton';
 
 export type ContentImageBlockProps = {
   fields: {
@@ -22,13 +23,6 @@ export type ContentImageBlockProps = {
  */
 export default function ContentImageBlock({ fields }: ContentImageBlockProps): JSX.Element {
   const heading = useMemo(() => fields.heading.value.split(' '), [fields.heading.value]);
-  const buttonSrc = useMemo(
-    () =>
-      fields.backgroundColour.value === 'Dark'
-        ? '/assets/arrow_button_outlined.svg'
-        : '/assets/arrow_button_filled.svg',
-    [fields.backgroundColour.value]
-  );
 
   return (
     <section className={clsx('content-image-block', fields.backgroundColour.value)}>
@@ -45,18 +39,18 @@ export default function ContentImageBlock({ fields }: ContentImageBlockProps): J
           alt="content image"
           className="content-image-block__image"
         />
+        {/* <div></div> */}
 
         <div className="content-image-block__body">
           <Text tag="h3" field={fields.title} className="content-image-block__heading" />
           <Text tag="p" field={fields.description} className="content-image-block__description" />
 
           <div>
-            <Link field={fields.cta} className="content-image-block__cta">
-              <span>
-                <img src={buttonSrc} alt="arrow button" />
-              </span>
-              {fields.cta.value.text}
-            </Link>
+            <PrimaryButton
+              tag="link"
+              cta={fields.cta}
+              dark={fields.backgroundColour.value === 'Dark'}
+            />
           </div>
         </div>
       </div>

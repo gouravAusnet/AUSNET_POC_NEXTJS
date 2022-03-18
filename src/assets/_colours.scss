@@ -26,12 +26,15 @@ $fuels-gas-blue: #1da1bf;
 // Alerts
 $alerts-error: #d1325a;
 $alerts-warning: #e1711f;
-$alerts-information: #0e90c0;
+$alerts-info: #0e90c0;
 $alerts-success: #12b57a;
 $alerts-error-12: rgba(209, 50, 90, 0.12);
 $alerts-warning-12: rgba(225, 113, 31, 0.12);
-$alerts-information-12: rgba(14, 144, 192, 0.12);
+$alerts-info-12: rgba(14, 144, 192, 0.12);
 $alerts-success-12: rgba(18, 181, 122, 0.12);
 
 // Functionality
 $button-states-red-hover: #c21c46;
+
+// Input help text or unselected tabs
+$input-help-text-or-unselected-tabs: #6b748e;

@@ -46,11 +46,7 @@ export default function ContentImageBlock({ fields }: ContentImageBlockProps): J
           <Text tag="p" field={fields.description} className="content-image-block__description" />
 
           <div>
-            <PrimaryButton
-              tag="link"
-              cta={fields.cta}
-              dark={fields.backgroundColour.value === 'Dark'}
-            />
+            <PrimaryButton cta={fields.cta} dark={fields.backgroundColour.value === 'Dark'} />
           </div>
         </div>
       </div>

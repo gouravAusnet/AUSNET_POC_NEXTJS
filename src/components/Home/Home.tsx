@@ -1,5 +1,6 @@
 import type { LinkField, ImageField, Field } from '@sitecore-jss/sitecore-jss-nextjs';
 import type { ContentImageBlockProps } from 'components/container/ContentImageBlock/ContentImageBlock';
+import type { PromotionalTilesProps } from 'components/container/PromotionalTiles/PromotionalTiles';
 
 import { Text, Image, Link, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
 import { StyleguideComponentProps } from 'lib/component-props';
@@ -10,8 +11,11 @@ import RightComponenet from '../RightComponent';
 // Temporary only
 // TODO: remove this and read data from sitecore
 import json from 'assets/sitecore.json';
+import PromotionalTiles from 'components/container/PromotionalTiles/PromotionalTiles';
 const contentImageBlockProps = json.sitecore.route.placeholders['jss-main'][0]
   .fields as unknown as ContentImageBlockProps['fields'];
+const promotionalTilesProps = json.sitecore.route.placeholders['jss-main'][1]
+  .fields as unknown as PromotionalTilesProps['fields'];
 
 type HomeProps = StyleguideComponentProps & {
   fields: {
@@ -83,62 +87,7 @@ const Home = (props: HomeProps): JSX.Element => (
 
     <div className="keep-our-comm-safe">
       <ContentImageBlock fields={contentImageBlockProps} />
-
-      <section className="promationTile-section container">
-        <div className="row">
-          <div className="card promationTile col" style={{ width: '22%' }}>
-            <div className="card-body">
-              <Image className="d-block lifeImg" media={props.fields.lifeImage} />
-              <p className="card-title reportOutage">
-                <Text field={props.fields.tileText1} />
-              </p>
-              <p className="card-text reportOutageText">
-                <Text field={props.fields.tilecontentText1} />
-              </p>
-              <li className="reportLinks">
-                <div className="arrowStyle">
-                  <Image className="d-block w-100" media={props.fields.arrowButtonBorder} />
-                </div>
-                <Link field={props.fields.tileLink1} />
-              </li>
-            </div>
-          </div>
-          <div className="card promationTile col" style={{ width: '22%' }}>
-            <div className="card-body">
-              <Image className="d-block lifeImg" media={props.fields.lifeImage} />
-              <p className="card-title reportOutage">
-                <Text field={props.fields.tileText1} />
-              </p>
-              <p className="card-text reportOutageText">
-                <Text field={props.fields.tilecontentText1} />
-              </p>
-              <li className="reportLinks">
-                <div className="arrowStyle">
-                  <Image className="d-block w-100" media={props.fields.arrowButtonBorder} />
-                </div>
-                <Link field={props.fields.tileLink1} />
-              </li>
-            </div>
-          </div>
-          <div className="card promationTile col" style={{ width: '22%' }}>
-            <div className="card-body">
-              <Image className="d-block lifeImg" media={props.fields.lifeImage} />
-              <p className="card-title reportOutage">
-                <Text field={props.fields.tileText1} />
-              </p>
-              <p className="card-text reportOutageText">
-                <Text field={props.fields.tilecontentText1} />
-              </p>
-              <li className="reportLinks">
-                <div className="arrowStyle">
-                  <Image className="d-block w-100" media={props.fields.arrowButtonBorder} />
-                </div>
-                <Link field={props.fields.tileLink1} />
-              </li>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PromotionalTiles fields={promotionalTilesProps} />
     </div>
 
     <div className="Latest-News">

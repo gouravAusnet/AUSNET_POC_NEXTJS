@@ -47,7 +47,7 @@
   &.dark {
     .primary-btn__circle {
       border: 1px solid $brand-blue;
-      background-color: $brand-dark-blue;
+      background-color: transparent;
     }
 
     .primary-btn__text {
@@ -75,6 +75,20 @@
         color: $input-help-text-or-unselected-tabs;
         opacity: 0.5;
       }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .primary-btn {
+    &__circle {
+      width: 40px;
+      height: 40px;
+      margin-right: 1rem;
+    }
+
+    &__text {
+      @include mobile-h5;
     }
   }
 }

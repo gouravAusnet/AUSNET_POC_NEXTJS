@@ -1,6 +1,7 @@
 @import './typography';
 @import './colours';
 @import './surfaces';
+@import './breakpoints';
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -40,3 +41,4 @@ li {
 @import '../components/container/PrimaryButton/PrimaryButton.scss';
 @import '../components/container/HomepageCarousel/HomepageCarousel.scss';
 @import '../components/container/ContentImageBlock/ContentImageBlock.scss';
+@import '../components/container/PromotionalTiles/PromotionalTiles.scss';

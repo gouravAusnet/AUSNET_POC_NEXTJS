@@ -6,6 +6,7 @@
   letter-spacing: -0.015rem;
   line-height: 96px;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin desk-h2 {
@@ -13,6 +14,7 @@
   font-size: 48px;
   letter-spacing: -0.5;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin desk-h3 {
@@ -21,6 +23,7 @@
   letter-spacing: 0;
   line-height: 44px;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin desk-h4 {
@@ -28,6 +31,7 @@
   font-size: 28px;
   letter-spacing: 0;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin desk-h5 {
@@ -36,6 +40,7 @@
   letter-spacing: 0;
   line-height: 28px;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin desk-h6 {
@@ -43,6 +48,7 @@
   font-size: 16px;
   letter-spacing: 0;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin desk-h7 {
@@ -50,6 +56,7 @@
   font-size: 14px;
   letter-spacing: 0;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin desk-intro {
@@ -57,6 +64,7 @@
   font-size: 28px;
   letter-spacing: 0;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin desk-body-large {
@@ -65,6 +73,7 @@
   letter-spacing: 0;
   line-height: 32px;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin desk-body-medium {
@@ -72,6 +81,7 @@
   font-size: 16px;
   letter-spacing: 0;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin desk-body-small {
@@ -79,6 +89,7 @@
   font-size: 14px;
   letter-spacing: 0;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin desk-overline {
@@ -86,6 +97,7 @@
   font-size: 14px;
   letter-spacing: 10;
   margin-bottom: 0;
+  width: unset;
   text-transform: uppercase;
 }
 
@@ -95,6 +107,7 @@
   font-size: 44px;
   letter-spacing: -1.5;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin mobile-h2 {
@@ -102,13 +115,16 @@
   font-size: 32px;
   letter-spacing: -0.5;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin mobile-h3 {
   font-weight: 700; // bold
   font-size: 28px;
   letter-spacing: 0;
+  line-height: 36px;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin mobile-h4 {
@@ -116,13 +132,16 @@
   font-size: 24px;
   letter-spacing: 0;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin mobile-h5 {
   font-weight: 600; // semibold
   font-size: 20px;
   letter-spacing: 0;
+  line-height: 28px;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin mobile-h6 {
@@ -130,6 +149,7 @@
   font-size: 16px;
   letter-spacing: 0;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin mobile-h7 {
@@ -137,6 +157,7 @@
   font-size: 14px;
   letter-spacing: 0;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin mobile-intro {
@@ -144,6 +165,7 @@
   font-size: 28px;
   letter-spacing: 0;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin mobile-body-large {
@@ -151,13 +173,16 @@
   font-size: 16px;
   letter-spacing: 0;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin mobile-body-medium {
   font-weight: 500; // medium
   font-size: 14px;
   letter-spacing: 0;
+  line-height: 20px;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin mobile-body-small {
@@ -165,12 +190,14 @@
   font-size: 12px;
   letter-spacing: 0;
   margin-bottom: 0;
+  width: unset;
 }
 
 @mixin mobile-overline {
   font-weight: 700; // bold
   font-size: 12px;
   letter-spacing: 10;
-  margin-bottom: 0;
   text-transform: uppercase;
+  margin-bottom: 0;
+  width: unset;
 }

@@ -7,8 +7,9 @@ import ContentImageBlock from 'components/container/ContentImageBlock/ContentIma
 import LeftComponent from '../LeftComponent';
 import RightComponenet from '../RightComponent';
 
+// Temporary only
+// TODO: remove this and read data from sitecore
 import json from 'assets/sitecore.json';
-
 const contentImageBlockProps = json.sitecore.route.placeholders['jss-main'][0]
   .fields as unknown as ContentImageBlockProps['fields'];
 
